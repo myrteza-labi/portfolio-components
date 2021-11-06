@@ -1,0 +1,13 @@
+.TabContainer {
+    display: none; 
+}
+
+.TabContainer.active {
+    display: none; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    padding: 30px; 
+}
+
+/*  continuer la navbar  */

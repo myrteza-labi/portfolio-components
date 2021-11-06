@@ -1,0 +1,11 @@
+.DropBtn{
+    width: 15px; 
+    height: 15px; 
+    background-color: transparent; 
+    border: none; 
+}
+
+.dropDownArrow {
+    width: 100%; 
+    height: auto; 
+}
