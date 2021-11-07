@@ -1,0 +1,17 @@
+.Parallax {
+    background-color:red; 
+    height: 500vh; 
+    position: relative;
+    top:0; 
+}
+
+.parallaxMainCtn{
+    background-color:red; 
+    height: 100vh; 
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top:0; 
+}

@@ -1,7 +1,10 @@
 .Intro {
+    position: relative; 
+    min-height: 550px; 
     margin: 120px 0 0 0 ; 
     display: flex; 
     flex-direction: column; 
-    justify-content: center; 
+    justify-content: space-between; 
     align-items: center; 
+    align-self: flex-end; 
 }
