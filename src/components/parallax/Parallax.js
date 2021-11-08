@@ -38,7 +38,6 @@ class Parallax extends React.Component {
                 },
             ],
         }
-        this.handleClick = this.handleClick.bind(this); 
         this.handleScroll = this.handleScroll.bind(this); 
     }
 
@@ -52,26 +51,10 @@ class Parallax extends React.Component {
     
     handleScroll(e) {
 
-
         const newArray = this.state.activeText.slice(); 
-
         const innerHeight = window.innerHeight; 
-
         const li1posY = document.getElementById('li1').getBoundingClientRect().y * 100 / innerHeight; 
-        const li2posY = document.getElementById('li2').getBoundingClientRect().y * 100 / innerHeight; 
-        const li3posY = document.getElementById('li3').getBoundingClientRect().y * 100 / innerHeight; 
-        const li4posY = document.getElementById('li4').getBoundingClientRect().y * 100 / innerHeight; 
-        const li5posY = document.getElementById('li5').getBoundingClientRect().y * 100 / innerHeight; 
 
-
-        console.log(li1posY); 
-
-
-        
-         
-
-
-        /* li 1 */
         if(li1posY >= 70){
             newArray[0] = "active ";
             newArray[1] = " ";             
@@ -112,30 +95,7 @@ class Parallax extends React.Component {
                 activeText : newArray, 
             })
         }
-
-
-        
-        
-
-        
-
-        /*
-        const li1Rect = this.state.li1.getBoundingClientRect(); 
-        const li1posY = li1Rect.y; 
-        console.log(li1posY); 
-        */
-    }
-    
-
-    handleClick(e){
-        const li1 = document.getElementById('li1');
-        /*
-        const li1Rect = li1.getBoundingClientRect(); 
-        const li1posY = li1Rect.y; */
-        console.log(li1.id); 
-    }
-
-    
+    }    
 
     render(){
 
@@ -144,7 +104,7 @@ class Parallax extends React.Component {
                 <div className="parallaxMainCtn">
                     <ParallaxBg/>
                 </div>
-                <ParallaxText activeTextArray={this.state.activeText} onClick={this.handleClick}/>
+                <ParallaxText activeTextArray={this.state.activeText}/>
             </div>
         )
     }

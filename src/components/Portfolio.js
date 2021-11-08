@@ -3,6 +3,7 @@ import './Portfolio.css'
 import Navbar from './navbar/Navbar';
 import Intro from './intro/Intro'; 
 import Parallax from './parallax/Parallax';
+import Responsive from './responsive/Responsive'; 
 
 function Portfolio() {
 
@@ -15,43 +16,9 @@ function Portfolio() {
             <div className={"shadowfilter " + active}></div>
             <Intro/>
             <Parallax/>
+            <Responsive/>
         </div>
     )
 }
 
 export default Portfolio
-
-
-/*
-
-<section className="Parallax">
-            
-            <div className="parallaxMainContainer">
-                <ParallaxBg/>
-                <ParallaxText/>
-            </div>
-            
-        </section>
-
-
-
-
-
-
-
-        css 
-
-        .Parallax {
-    min-height: 600px; 
-    position: relative; 
-    
-}
-
-.parallaxMainContainer {
-    min-height: 100%; 
-    position: -webkit-sticky;
-    position: sticky;
-    top:20px; 
-}
-
-*/

@@ -15,11 +15,11 @@
 
 .phrase {    
     display: inline-block; 
-    opacity: 0.4; 
+    opacity: 0.2; 
     display: inline; 
     line-height: 40px; 
     letter-spacing: 1px; 
-    font-size: 32px; 
+    font-size: 34px; 
 
 
 }

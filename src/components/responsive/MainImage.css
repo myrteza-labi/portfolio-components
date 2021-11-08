@@ -1,0 +1,5 @@
+.ResponsiveMainImage {
+    max-height: 100%; 
+    max-width: 300px; 
+    object-fit: contain; 
+}
